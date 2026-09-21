@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="REX STEM Boosters supports K-12 robotics teams and hands-on STEM education in Timonium, Maryland.">
-  <title>REX STEM Boosters | Build What Comes Next</title>
+  <title>REX STEM Boosters</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
   <header class="site-header">
     <div class="shell header-inner">
       <a class="brand" href="index.html" aria-label="REX STEM Boosters home">
-        <img src="assets/gear-mark.png" alt="" width="42" height="42">
+        <img src="assets/images/gear-mark.png" alt="" width="42" height="42">
         <span>REX <b>STEM Boosters</b></span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
@@ -35,22 +35,32 @@
   </header>
 
   <main id="main">
+
+    <aside class="meeting-strip" aria-label="Upcoming meeting">
+      <div class="shell meeting-inner">
+        <p><span>Next community meeting</span><strong>Wednesday, October 14, 2026 · 7:00 PM · Zoom</strong></p>
+        <a href="https://us02web.zoom.us/j/85218019434?pwd=zxrzaKVaYKDxCwYoJauIgaEmPhb7PY.1" target="_blank" rel="noopener">Join the meeting <span aria-hidden="true">↗</span></a>
+      </div>
+    </aside>
+
     <section class="hero">
       <div class="shell hero-grid">
         <div class="hero-copy">
           <p class="eyebrow"><span></span> Timonium, Maryland</p>
           <h1>Back the teams<br>building <em>tomorrow.</em></h1>
-          <p class="hero-lede">We connect community support with K-12 robotics programs, giving students the tools, funding, and opportunities to turn ambitious ideas into working machines.</p>
+          <!-- <h1><em>REX</em><br>STEM <em>Boosters.</em></h1> -->
+          <p class="hero-lede">REX STEM Boosters is a 501(c)(3) nonprofit created to connect support, funding, and opportunities to robotics teams and STEM initiatives in our community.
+</p>
           <div class="button-row">
-            <a class="button button-primary" href="donate.html">Support our teams <span aria-hidden="true">↗</span></a>
-            <a class="button button-ghost" href="teams.html">Meet the builders <span aria-hidden="true">→</span></a>
+            <a class="button button-primary" href="donate.html">Support our students <span aria-hidden="true">↗</span></a>
+            <a class="button button-ghost" href="teams.html">Meet the teams <span aria-hidden="true">→</span></a>
           </div>
         </div>
         <div class="hero-visual" aria-label="REX STEM Boosters supports three local robotics programs">
           <div class="orbit orbit-one"></div>
           <div class="orbit orbit-two"></div>
           <div class="visual-card">
-            <img src="assets/gear-mark.png" alt="REX STEM Boosters red gear mark">
+            <img src="assets/images/gear-mark.png" alt="REX STEM Boosters red gear mark">
           </div>
           <div class="data-tag tag-one"><strong>3</strong><span>robotics programs</span></div>
           <div class="data-tag tag-two"><strong>K–12</strong><span>students supported</span></div>
@@ -59,6 +69,45 @@
     </section>
 
     <section class="mission band">
+      <div class="mission-route" aria-hidden="true">
+        <svg viewBox="0 0 220 520" preserveAspectRatio="none">
+          <path
+            id="mission-path"
+            class="mission-path"
+            d="
+              M -15 45
+              C 150 36 451 110 143 194
+              C 57 230 7 317 84 352
+              C 199 411 132 474 -15 485
+              "
+            />
+
+          <rect
+            class="mission-robot"
+            x="-13"
+            y="-9"
+            width="26"
+            height="18"
+            rx="2"
+          >
+            <animateMotion
+              dur="12s"
+              repeatCount="indefinite"
+              rotate="auto"
+              calcMode="spline"
+              keyTimes="0;0.08;0.92;1"
+              keyPoints="0;0;1;1"
+              keySplines="
+                0 0 1 1;
+                0.42 0 0.58 1;
+                0 0 1 1"
+            >
+              <mpath href="#mission-path" />
+            </animateMotion>
+          </rect>
+        </svg>
+      </div>
+
       <div class="shell split-heading">
         <p class="section-label">01 / Our mission</p>
         <div>
@@ -93,17 +142,17 @@
         <div class="team-grid">
           <article class="team-card">
             <span class="team-number">01</span>
-            <img src="assets/ridgely-robotics.jpg" alt="Ridgely Robotics logo">
+            <img src="assets/images/ridgely-robotics.jpg" alt="Ridgely Robotics logo">
             <div><p>VEX IQ · Middle school</p><h3>Ridgely Robotics</h3></div>
           </article>
           <article class="team-card">
             <span class="team-number">02</span>
-            <img src="assets/dulaney-vex.jpg" alt="Dulaney VEX Robotics lion logo">
+            <img src="assets/images/dulaney-vex.png" alt="Dulaney VEX Robotics lion logo">
             <div><p>VEX V5 · High school</p><h3>1727 REX VEX</h3></div>
           </article>
           <article class="team-card team-card-dark">
             <span class="team-number">03</span>
-            <img src="assets/dulaney-frc.jpg" alt="Dulaney FIRST Robotics lion logo">
+            <img src="assets/images/dulaney-frc.jpg" alt="Dulaney FIRST Robotics lion logo">
             <div><p>FIRST · High school</p><h3>1727 REX FRC</h3></div>
           </article>
         </div>
@@ -123,12 +172,12 @@
       </div>
     </section>
 
-    <aside class="meeting-strip" aria-label="Upcoming meeting">
+    <!-- <aside class="meeting-strip" aria-label="Upcoming meeting">
       <div class="shell meeting-inner">
         <p><span>Next community meeting</span><strong>Wednesday, October 14, 2026 · 7:00 PM · Zoom</strong></p>
         <a href="https://us02web.zoom.us/j/85218019434?pwd=zxrzaKVaYKDxCwYoJauIgaEmPhb7PY.1" target="_blank" rel="noopener">Join the meeting <span aria-hidden="true">↗</span></a>
       </div>
-    </aside>
+    </aside> -->
   </main>
 
   <footer class="site-footer">

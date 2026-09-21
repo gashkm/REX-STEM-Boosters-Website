@@ -1,12 +1,454 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Join, donate, sponsor, or volunteer with REX STEM Boosters."><title>Ways to Help | REX STEM Boosters</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23111113'/%3E%3Cpath d='M28 8h8l2 7 6 3 7-2 4 7-5 5v8l5 5-4 7-7-2-6 3-2 7h-8l-2-7-6-3-7 2-4-7 5-5v-8l-5-5 4-7 7 2 6-3 2-7Zm4 15a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z' fill='%23ed1c24'/%3E%3C/svg%3E"><link rel="stylesheet" href="assets/styles.css"><script src="assets/main.js" defer></script></head>
-<body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="shell header-inner"><a class="brand" href="index.html"><img src="assets/gear-mark.png" alt="" width="42" height="42"><span>REX <b>STEM Boosters</b></span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><span class="sr-only">Open menu</span></button><nav id="site-nav" class="site-nav"><a href="index.html">Home</a><a href="teams.html">Our teams</a><a class="active" href="support.html">Ways to help</a><a href="membership.html">Membership</a><a href="sponsor.html">Sponsor</a><a class="nav-cta" href="donate.html">Donate</a></nav></div></header>
+<body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="shell header-inner"><a class="brand" href="index.html"><img src="assets/images/gear-mark.png" alt="" width="42" height="42"><span>REX <b>STEM Boosters</b></span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><span class="sr-only">Open menu</span></button><nav id="site-nav" class="site-nav"><a href="index.html">Home</a><a href="teams.html">Our teams</a><a class="active" href="support.html">Ways to help</a><a href="membership.html">Membership</a><a href="sponsor.html">Sponsor</a><a class="nav-cta" href="donate.html">Donate</a></nav></div></header>
 <main id="main"><section class="page-hero page-hero-blue"><div class="shell"><p class="eyebrow"><span></span> Ways to help</p><h1>Bring resources.<br><em>Build possibility.</em></h1><p>Time, expertise, and funding all move our teams forward. Choose the role that fits you.</p></div></section>
-<section class="support-options band band-light"><div class="shell option-grid">
-  <article class="option-card"><span>01</span><h2>Become a member</h2><p>Support every team and program, receive updates, and vote at public meetings.</p><a href="membership.html">Membership details →</a></article>
-  <article class="option-card"><span>02</span><h2>Make a donation</h2><p>Direct a tax-deductible gift to one team or strengthen the shared booster fund.</p><a href="donate.html">Choose your impact →</a></article>
-  <article class="option-card"><span>03</span><h2>Sponsor a team</h2><p>Help students reach the next competition while putting your business behind local STEM.</p><a href="sponsor.html">Sponsorship options →</a></article>
-  <article class="option-card" id="volunteer"><span>04</span><h2>Volunteer</h2><p>Mentor a team, judge a competition, referee matches, or help run a community event.</p><a href="mailto:info@rexstemboosters.org?subject=Volunteer%20with%20REX%20STEM%20Boosters">Ask about volunteering →</a></article>
-</div></section>
+<section class="support-options band band-light">
+<div class="help-network" aria-hidden="true">
+  <svg
+    viewBox="0 0 360 320"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <defs>
+      <!--
+        Visible routes stop at the outside edge of the controller.
+      -->
+
+      <path
+        id="help-track-1"
+        pathLength="100"
+        d="M40 70 H105 V160 H155"
+      />
+
+      <path
+        id="help-track-2"
+        pathLength="100"
+        d="M320 55 H250 V100 H180 V135"
+      />
+
+      <path
+        id="help-track-3"
+        pathLength="100"
+        d="M320 255 H255 V160 H205"
+      />
+
+      <path
+        id="help-track-4"
+        pathLength="100"
+        d="M40 260 H110 V225 H180 V185"
+      />
+
+      <!--
+        The moving squares continue beyond the visible routes and
+        enter the exact center of the controller.
+      -->
+
+      <path
+        id="help-motion-1"
+        d="M40 70 H105 V160 H180"
+      />
+
+      <path
+        id="help-motion-2"
+        d="M320 55 H250 V100 H180 V160"
+      />
+
+      <path
+        id="help-motion-3"
+        d="M320 255 H255 V160 H180"
+      />
+
+      <path
+        id="help-motion-4"
+        d="M40 260 H110 V225 H180 V160"
+      />
+    </defs>
+
+    <!-- Permanent background routes -->
+
+    <g class="help-network__tracks">
+      <use href="#help-track-1" />
+      <use href="#help-track-2" />
+      <use href="#help-track-3" />
+      <use href="#help-track-4" />
+    </g>
+
+    <!-- Outer nodes -->
+
+    <g class="help-network__nodes">
+      <rect x="25" y="55" width="30" height="30" rx="3" />
+      <rect x="305" y="40" width="30" height="30" rx="3" />
+      <rect x="305" y="240" width="30" height="30" rx="3" />
+      <rect x="25" y="245" width="30" height="30" rx="3" />
+    </g>
+
+    <!-- Central controller -->
+
+    <rect
+      class="help-network__controller"
+      x="155"
+      y="135"
+      width="50"
+      height="50"
+      rx="5"
+    />
+
+    <!--
+      The group places the local origin at the controller center.
+      This lets the red core grow without shifting position.
+    -->
+
+    <g transform="translate(180 160)">
+      <rect
+        class="help-network__core"
+        x="-9"
+        y="-9"
+        width="18"
+        height="18"
+        rx="2"
+      >
+        <!--
+          Pulses occur when the four squares arrive:
+          2.4s, 5.4s, 8.4s, and 11.4s.
+        -->
+
+        <animateTransform
+          attributeName="transform"
+          type="scale"
+          dur="12s"
+          repeatCount="indefinite"
+          calcMode="linear"
+          keyTimes="
+            0;
+            0.18;
+            0.20;
+            0.23;
+            0.43;
+            0.45;
+            0.48;
+            0.68;
+            0.70;
+            0.73;
+            0.93;
+            0.95;
+            0.98;
+            1
+          "
+          values="
+            1;
+            1;
+            1.5;
+            1;
+            1;
+            1.5;
+            1;
+            1;
+            1.5;
+            1;
+            1;
+            1.5;
+            1;
+            1
+          "
+        />
+      </rect>
+    </g>
+
+    <!-- Short moving red line segments -->
+
+    <g class="help-network__segments">
+      <!-- Segment 1 -->
+
+      <use
+        href="#help-track-1"
+        stroke-dasharray="15 85"
+        stroke-dashoffset="0"
+        opacity="0"
+      >
+        <animate
+          attributeName="stroke-dashoffset"
+          begin="0s"
+          dur="12s"
+          repeatCount="indefinite"
+          calcMode="spline"
+          keyTimes="0;0.1583;0.17;1"
+          values="0;-85;-85;0"
+          keySplines="
+            0.45 0 0.55 1;
+            0 0 1 1;
+            0 0 1 1
+          "
+        />
+
+        <animate
+          attributeName="opacity"
+          begin="0s"
+          dur="12s"
+          repeatCount="indefinite"
+          keyTimes="0;0.005;0.145;0.1583;1"
+          values="0;1;1;0;0"
+        />
+      </use>
+
+      <!-- Segment 2 -->
+
+      <use
+        href="#help-track-2"
+        stroke-dasharray="15 85"
+        stroke-dashoffset="0"
+        opacity="0"
+      >
+        <animate
+          attributeName="stroke-dashoffset"
+          begin="3s"
+          dur="12s"
+          repeatCount="indefinite"
+          calcMode="spline"
+          keyTimes="0;0.1583;0.17;1"
+          values="0;-85;-85;0"
+          keySplines="
+            0.45 0 0.55 1;
+            0 0 1 1;
+            0 0 1 1
+          "
+        />
+
+        <animate
+          attributeName="opacity"
+          begin="3s"
+          dur="12s"
+          repeatCount="indefinite"
+          keyTimes="0;0.005;0.145;0.1583;1"
+          values="0;1;1;0;0"
+        />
+      </use>
+
+      <!-- Segment 3 -->
+
+      <use
+        href="#help-track-3"
+        stroke-dasharray="15 85"
+        stroke-dashoffset="0"
+        opacity="0"
+      >
+        <animate
+          attributeName="stroke-dashoffset"
+          begin="6s"
+          dur="12s"
+          repeatCount="indefinite"
+          calcMode="spline"
+          keyTimes="0;0.1583;0.17;1"
+          values="0;-85;-85;0"
+          keySplines="
+            0.45 0 0.55 1;
+            0 0 1 1;
+            0 0 1 1
+          "
+        />
+
+        <animate
+          attributeName="opacity"
+          begin="6s"
+          dur="12s"
+          repeatCount="indefinite"
+          keyTimes="0;0.005;0.145;0.1583;1"
+          values="0;1;1;0;0"
+        />
+      </use>
+
+      <!-- Segment 4 -->
+
+      <use
+        href="#help-track-4"
+        stroke-dasharray="15 85"
+        stroke-dashoffset="0"
+        opacity="0"
+      >
+        <animate
+          attributeName="stroke-dashoffset"
+          begin="9s"
+          dur="12s"
+          repeatCount="indefinite"
+          calcMode="spline"
+          keyTimes="0;0.1583;0.17;1"
+          values="0;-85;-85;0"
+          keySplines="
+            0.45 0 0.55 1;
+            0 0 1 1;
+            0 0 1 1
+          "
+        />
+
+        <animate
+          attributeName="opacity"
+          begin="9s"
+          dur="12s"
+          repeatCount="indefinite"
+          keyTimes="0;0.005;0.145;0.1583;1"
+          values="0;1;1;0;0"
+        />
+      </use>
+    </g>
+
+    <!-- Independently moving signal squares -->
+
+    <g class="help-network__travelers">
+      <!-- Square 1 -->
+
+      <rect
+        class="help-network__traveler"
+        x="-5"
+        y="-5"
+        width="10"
+        height="10"
+        rx="1.5"
+        opacity="0"
+      >
+        <animateMotion
+          begin="0s"
+          dur="12s"
+          repeatCount="indefinite"
+          calcMode="spline"
+          keyTimes="0;0.0333;0.20;1"
+          keyPoints="0;0;1;1"
+          keySplines="
+            0 0 1 1;
+            0.45 0 0.55 1;
+            0 0 1 1
+          "
+        >
+          <mpath href="#help-motion-1" />
+        </animateMotion>
+
+        <animate
+          attributeName="opacity"
+          begin="0s"
+          dur="12s"
+          repeatCount="indefinite"
+          keyTimes="0;0.032;0.034;0.20;0.23;1"
+          values="0;0;1;1;0;0"
+        />
+      </rect>
+
+      <!-- Square 2 -->
+
+      <rect
+        class="help-network__traveler"
+        x="-5"
+        y="-5"
+        width="10"
+        height="10"
+        rx="1.5"
+        opacity="0"
+      >
+        <animateMotion
+          begin="3s"
+          dur="12s"
+          repeatCount="indefinite"
+          calcMode="spline"
+          keyTimes="0;0.0333;0.20;1"
+          keyPoints="0;0;1;1"
+          keySplines="
+            0 0 1 1;
+            0.45 0 0.55 1;
+            0 0 1 1
+          "
+        >
+          <mpath href="#help-motion-2" />
+        </animateMotion>
+
+        <animate
+          attributeName="opacity"
+          begin="3s"
+          dur="12s"
+          repeatCount="indefinite"
+          keyTimes="0;0.032;0.034;0.20;0.23;1"
+          values="0;0;1;1;0;0"
+        />
+      </rect>
+
+      <!-- Square 3 -->
+
+      <rect
+        class="help-network__traveler"
+        x="-5"
+        y="-5"
+        width="10"
+        height="10"
+        rx="1.5"
+        opacity="0"
+      >
+        <animateMotion
+          begin="6s"
+          dur="12s"
+          repeatCount="indefinite"
+          calcMode="spline"
+          keyTimes="0;0.0333;0.20;1"
+          keyPoints="0;0;1;1"
+          keySplines="
+            0 0 1 1;
+            0.45 0 0.55 1;
+            0 0 1 1
+          "
+        >
+          <mpath href="#help-motion-3" />
+        </animateMotion>
+
+        <animate
+          attributeName="opacity"
+          begin="6s"
+          dur="12s"
+          repeatCount="indefinite"
+          keyTimes="0;0.032;0.034;0.20;0.23;1"
+          values="0;0;1;1;0;0"
+        />
+      </rect>
+
+      <!-- Square 4 -->
+
+      <rect
+        class="help-network__traveler"
+        x="-5"
+        y="-5"
+        width="10"
+        height="10"
+        rx="1.5"
+        opacity="0"
+      >
+        <animateMotion
+          begin="9s"
+          dur="12s"
+          repeatCount="indefinite"
+          calcMode="spline"
+          keyTimes="0;0.0333;0.20;1"
+          keyPoints="0;0;1;1"
+          keySplines="
+            0 0 1 1;
+            0.45 0 0.55 1;
+            0 0 1 1
+          "
+        >
+          <mpath href="#help-motion-4" />
+        </animateMotion>
+
+        <animate
+          attributeName="opacity"
+          begin="9s"
+          dur="12s"
+          repeatCount="indefinite"
+          keyTimes="0;0.032;0.034;0.20;0.23;1"
+          values="0;0;1;1;0;0"
+        />
+      </rect>
+    </g>
+  </svg>
+</div>
+
+  <div class="shell option-grid">
+    <article class="option-card"><span>01</span><h2>Become a member</h2><p>Support every team and program, receive updates, and vote at public meetings.</p><a href="membership.html">Membership details →</a></article>
+    <article class="option-card"><span>02</span><h2>Make a donation</h2><p>Direct a tax-deductible gift to one team or strengthen the shared booster fund.</p><a href="donate.html">Choose your impact →</a></article>
+    <article class="option-card"><span>03</span><h2>Sponsor a team</h2><p>Help students reach the next competition while putting your business behind local STEM.</p><a href="sponsor.html">Sponsorship options →</a></article>
+    <article class="option-card" id="volunteer"><span>04</span><h2>Volunteer</h2><p>Mentor a team, judge a competition, referee matches, or help run a community event.</p><a href="mailto:info@rexstemboosters.org?subject=Volunteer%20with%20REX%20STEM%20Boosters">Ask about volunteering →</a></article>
+  </div>
+</section>
 <section class="trust-strip"><div class="shell"><div><strong>100%</strong><p>of funds raised through Zeffy can go to the mission.</p></div><p>REX STEM Boosters Club is a volunteer-run 501(c)(3) nonprofit supporting robotics and STEM initiatives in the Timonium community.</p></div></section></main>
-<footer class="site-footer"><div class="shell footer-main"><a class="brand" href="index.html"><img src="assets/gear-mark.png" alt="" width="42" height="42"><span>REX <b>STEM Boosters</b></span></a><p>Volunteer-run. Community-powered.<br>Built for the next generation.</p><a href="mailto:info@rexstemboosters.org">info@rexstemboosters.org</a></div><div class="shell footer-bottom"><span>© <span data-year></span> REX STEM Boosters Club, Inc.</span><span>501(c)(3) nonprofit organization</span></div></footer></body></html>
+<footer class="site-footer"><div class="shell footer-main"><a class="brand" href="index.html"><img src="assets/images/gear-mark.png" alt="" width="42" height="42"><span>REX <b>STEM Boosters</b></span></a><p>Volunteer-run. Community-powered.<br>Built for the next generation.</p><a href="mailto:info@rexstemboosters.org">info@rexstemboosters.org</a></div><div class="shell footer-bottom"><span>© <span data-year></span> REX STEM Boosters Club, Inc.</span><span>501(c)(3) nonprofit organization</span></div></footer></body></html>
